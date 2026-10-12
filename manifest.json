@@ -1,0 +1,11 @@
+{
+  "name": "STACKED — Money dashboard",
+  "short_name": "STACKED",
+  "description": "Your money, organised.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b0e0c",
+  "theme_color": "#101311",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
