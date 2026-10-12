@@ -1,22 +1,23 @@
-# STACKED — installable money dashboard
+# STACKED — money coach PWA
 
-A lightweight Progressive Web App for Android and desktop. It includes editable balances, a weekly budget, savings goals, and JSON backup export.
+## Publish/update on GitHub Pages
+1. Download and unzip this package.
+2. Upload the files inside `stacked_pwa` to the root of your existing GitHub Pages repository, replacing the old versions.
+3. Commit the changes and wait for Pages to deploy.
+4. Open your existing STACKED URL and refresh. If the old version remains, close the installed app/tab and reopen it after a short wait.
 
-## Preview
-Open `index.html` in a browser. The main features work locally, but installation and offline caching require serving the app from `localhost` or a secure HTTPS website.
+## Included
+- Editable spending, savings, cash and weekly-pay balances.
+- Editable weekly budget.
+- Multiple savings goals with targets, progress and saved amounts.
+- Manual income/spending log; each entry updates the selected tracked balance.
+- Last-30-day average income/spending estimates based on transactions you log.
+- Basic money-coach suggestions based on your budget and logged transactions.
+- Optional browser notifications and test/check-in alerts.
+- Local browser storage and JSON backup export.
 
-## Install on Android and PC
-PWAs need a secure origin (HTTPS, or localhost). To install on both devices, publish the contents of this folder using a static hosting service such as GitHub Pages or Netlify:
-1. Create an account with the hosting service.
-2. Upload the four app files (`index.html`, `manifest.json`, `sw.js`, `icon.svg`) and keep their names unchanged.
-3. Open the HTTPS site on Android in Chrome; use the browser menu and choose **Install app** or **Add to Home screen**.
-4. Open the same site on PC in Chrome or Edge and select the install icon in the address bar, or use the browser menu → **Install STACKED**.
-
-## Data and privacy
-- Balances, budget lines and goals are saved in that browser's local storage.
-- Phone and PC do not automatically sync with each other.
-- Use **Export backup** to download a JSON backup.
-- Avoid clearing browser site data unless you have a backup.
-- Starting balances are demo values; update them to your current figures.
-
-This is a starter PWA, not an app-store release. Installation is through a supported browser.
+## Important limitations
+- This is not connected to Nationwide or any bank. Balances and transactions are manual until a genuine Open Banking integration is implemented securely.
+- Notifications can be requested and triggered from the app, but reliable automatic alerts while the app is closed require a push service/backend. No bank-event alerts are active.
+- Data stays in the browser/device profile. It does not automatically sync between your PC and phone. Export a backup periodically.
+- For safety, do not put bank credentials, Open Banking tokens, or SimpleFIN claim tokens into this repository or client-side code.
